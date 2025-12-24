@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #020617;
+  color: white;
+}
+
+.blue { color: #38bdf8; }
+
+.hidden { display: none; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  right: 20px;
+  background: #020617;
+  border: 1px solid #334155;
+}
+
+.dropdown button {
+  display: block;
+  width: 150px;
+  padding: 10px;
+}
+
+.box {
+  margin: 30px;
+  padding: 20px;
+  background: #020617;
+  border-radius: 8px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
