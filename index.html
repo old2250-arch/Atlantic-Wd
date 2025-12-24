@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>ATLANTIC WITHDRAW</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginBox" class="login">
+  <h2>🔐 Login</h2>
+  <input type="password" id="pw" placeholder="Masukkan Password">
+  <button onclick="login()">Masuk</button>
+  <p id="loginErr"></p>
+</div>
+
+<!-- DASHBOARD -->
+<div id="app" class="hidden">
+
+<header>
+  <div class="title">
+    <span class="blue">ATLANTIC</span> WITHDRAW
+  </div>
+  <div class="menu">
+    <button onclick="toggleMenu()">⋮</button>
+    <div id="dropdown" class="dropdown hidden">
+      <button onclick="showSaldo()">Cek Saldo</button>
+      <button onclick="showWithdraw()">Withdraw</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- CEK SALDO -->
+  <div id="saldoBox" class="box hidden">
+    <h3>Cek Saldo Atlantic</h3>
+    <input id="apiKey" placeholder="API Atlantic">
+    <button onclick="cekSaldo()">Cek</button>
+    <p id="saldoResult"></p>
+  </div>
+
+  <!-- WITHDRAW -->
+  <div id="withdrawBox" class="box hidden">
+    <h3>Withdraw</h3>
+    <input id="token" placeholder="API Atlantic">
+    <select id="layanan">
+      <option value="DANA">DANA</option>
+      <option value="OVO">OVO</option>
+      <option value="GOPAY">GOPAY</option>
+      <option value="SHOPEEPAY">SHOPEEPAY</option>
+    </select>
+    <input id="nomor" placeholder="No E-Wallet">
+    <input id="nominal" type="number" placeholder="Minimal 5000">
+    <button onclick="withdraw()">Withdraw</button>
+    <p id="wdResult"></p>
+  </div>
+</main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
